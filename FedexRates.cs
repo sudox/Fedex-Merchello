@@ -184,7 +184,7 @@ namespace RateAvailableServiceWebServiceClient
                 for (int j = 0; j < rateReplyDetail.RatedShipmentDetails.Length;j++ )
                 {
                     RatedShipmentDetail shipmentDetail = rateReplyDetail.RatedShipmentDetails[j];
-                    rates.Add(((Convert.ToDecimal(ShowShipmentRateDetails(shipmentDetail)) * 1.23M) + 5.50M).ToString());
+                    rates.Add(((Convert.ToDecimal(ShowShipmentRateDetails(shipmentDetail)))).ToString());
                     //ShowPackageRateDetails(shipmentDetail.RatedPackages);
                 }
                 //ShowDeliveryDetails(rateReplyDetail);
